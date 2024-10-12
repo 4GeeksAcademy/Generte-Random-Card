@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generate Card - Alejandro</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+  <body class="bg-success">
+    <div class="card bg-white" id="card">
+      <div class="container-stick"></div>
+      <div class="container-number"></div>
+      <div class="container-stick-flipped"></div>
     </div>
+
+    <div class="conatiner-form">
+      <input
+        type="number"
+        class="form-control"
+        id="width-card"
+        placeholder="Elige el ancho de la carta en pixeles entre 90-1500"
+      />
+      <input
+        type="number"
+        class="form-control"
+        id="height-card"
+        placeholder="Elige el alto de la carta en pixeles entre 300-400"
+      />
+    </div>
+
+    <button class="btn btn-dark" id="resize-btn">Cambiar Tamaño</button>
+    <button class="btn btn-dark" id="generate-btn">
+      <i class="fa-solid fa-rotate"></i>
+    </button>
+
+    <script src="./app.js"></script>
   </body>
 </html>
