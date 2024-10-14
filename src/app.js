@@ -44,8 +44,8 @@ resizeBtn.addEventListener("click", () => {
   let newWidth = widthCard.value;
   let newHeight = heightCard.value;
 
-  if (newWidth) card.style.width = `${newWidth}px`;
-  if (newHeight) card.style.height = `${newHeight}px`;
+  card.style.width = `${newWidth}px`;
+  card.style.height = `${newHeight}px`;
 });
 
 btn.addEventListener("click", () => {
