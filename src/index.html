@@ -18,7 +18,7 @@
   </head>
   <body class="bg-success">
     <div class="card bg-white" id="card">
-      <div class="container-stick"></div>
+      <div class="container-stick" id="stickContainer"></div>
       <div class="container-number"></div>
       <div class="container-stick-flipped"></div>
     </div>
@@ -28,13 +28,19 @@
         type="number"
         class="form-control"
         id="width-card"
-        placeholder="Elige el ancho de la carta en pixeles entre 90-1500"
+        placeholder="Elige el ancho de la carta"
+        min="90"
+        max="1500"
+        value="300"
       />
       <input
         type="number"
         class="form-control"
         id="height-card"
-        placeholder="Elige el alto de la carta en pixeles entre 300-400"
+        placeholder="Elige el alto de la carta"
+        min="300"
+        max="400"
+        value="400"
       />
     </div>
 

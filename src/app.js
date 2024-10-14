@@ -44,8 +44,15 @@ resizeBtn.addEventListener("click", () => {
   let newWidth = widthCard.value;
   let newHeight = heightCard.value;
 
+  let newFontSizeStick = (newHeight / 300) * 3;
+  let newFontSizeNumber = (newHeight / 300) * 8;
+
   card.style.width = `${newWidth}px`;
   card.style.height = `${newHeight}px`;
+
+  containerStick.style.fontSize = `${newFontSizeStick}em`;
+  containerNumber.style.fontSize = `${newFontSizeNumber}em`;
+  containerStickFlipped.style.fontSize = `${newFontSizeStick}em`;
 });
 
 btn.addEventListener("click", () => {
